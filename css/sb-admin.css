@@ -1,19 +1,29 @@
-/*!
- * Start Bootstrap - SB Admin v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/sb-admin)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
- */
 html {
   position: relative;
   min-height: 100%; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+   }
+
+ol {
+  z-index: 11;
+}
+.viewport{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 56px;
+  top:0;
+  left:0;
+  z-index: 0;
+}
 
 .content-wrapper {
   min-height: calc(100vh - 56px);
   padding-top: 1rem;
-  margin-bottom: 56px; }
+  margin-bottom: 56px;
+  background-image: url("bg.jpg"); }
 
 .scroll-to-top {
   position: fixed;
@@ -326,6 +336,7 @@ footer.sticky-footer {
   width: 100%;
   height: 56px;
   background-color: #e9ecef;
+  z-index: 11;
   line-height: 55px; }
   @media (min-width: 992px) {
     footer.sticky-footer { }
