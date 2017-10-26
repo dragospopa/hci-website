@@ -1,0 +1,30 @@
+build:
+  version: 2016-03-14 # version of the build schema.
+  steps:
+    builder:
+      name: builder
+      dockerfile: Dockerfile
+      secrets:
+        id_rsa:
+          type: file
+          value: _env(HOME)/.ssh/my_private_key
+      artifacts:
+        - /go/src/github.com/cloud66/iron-mountain/iron-mountain
+        - /go/src/github.com/cloud66/iron-mountain/config.json
+        - /go/src/github.com/cloud66/iron-mountain/localhost.crt
+        - /go/src/github.com/cloud66/iron-mountain/localhost.key
+      cleanup:
+        commands:
+          - rm -rf /root/.ssh/
+    deployment:
+      name: ironmountain
+      dockerfile: Dockerfile
+      depends_on:
+        - builder
+    uploader:
+      name: uploader
+      dockerfile: Dockerfile
+      depends_on:
+        - ironmountain
+      command: s3cmd --access_key=_env(ACCESS_KEY) --secret_key=_env(SECRET_KEY) put /app/iron-mountain s3://uploads.aws.com
+  
