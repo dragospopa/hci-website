@@ -17,6 +17,8 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+     <script src="js/sb-admin-charts.min.js"></script>
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -24,96 +26,67 @@
     
     <!-- Arrows -->
     <a href="2.html"><div class="next"><img src="right.png"></div></a>
-
-  <div class="content-wrapper" >
+  <div class="content-wrapper">
     <div class="container-fluid" style="z-index: 1000;">
       <!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item" >
-          <a href="#">Dashboard</a>
-        </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
-      </ol>
-      <!-- Area Chart Example-->
-      <div class="card mb-3" style="opacity: 0.9;">
-        <div class="card-header">
-          <i class="fa fa-area-chart"></i> Area Chart Example</div>
-        <div class="card-body">
-          <p> yaay omg wow bby pls </p>
-        </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      <div class="tracker">
+        <ol>
+          <li> <a href="" class="active"> Project overview</a> /</li>
+          <li> <a href="2.html" class="item"> Initial Research</a> /</li>
+          <li> <a href="3.html" class="item"> User Requirements</a> /</li>
+          <li> <a href="" class="item"> Personas</a> /</li>
+          <li> <a href="" class="item"> Scenarios</a> /</li>
+          <li> <a href="" class="item"> Sketches</a> /</li>
+          <li> <a href="" class="item"> Prototyping</a> /</li>
+          <li> <a href="" class="item"> Evaluation</a> /</li>
+          <li> <a href="" class="item"> Iterations</a></li>
+        </ol>
       </div>
-     <div class="row">
-        <div class="col-lg-8">
-          <!-- Example Bar Chart Card-->
+      <br>
+      <!-- Area Chart Example-->
+      <div class="card mb-3" style="opacity:0.9;">
+        <div class="card-header" style="background-color: #277BE9">
+          <i class="fa fa-area-chart"></i><font size="4px"> Project Overview</font></div>
+        <div class="card-body">
+          <p><font size="4px">The purpose of our project is to provide a platform for a variety of users to easily access, analyse and discuss geodata, regardless of their background (background here meaning geographic experts, business people, politicians and so on). The data will be previously uploaded geographical data that users will find useful to manipulate - it could be in relation to their local areas, their places of work, geographical places of interest, places they intend to (or have) visited, and so on. The output file passed back to the user can be in a variety of formats including map data, graphs, charts and so on. </font></p>
+        </div>
+      </div>
+          <!-- Example Bar Chart Card--><br><br>
           <div class="card mb-3" style="opacity:0.9;">
-            <div class="card-header">
-              <i class="fa fa-bar-chart"></i> Bar Chart Example</div>
+            <div class="card-header" style="background-color: #F5C42E">
+              <i class="fa fa-bar-chart"></i><font size="4px"> Functional Overview</font></div>
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-8 my-auto">
-                  <canvas id="myBarChart" width="100" height="50"></canvas>
+                <font size="4px">  Our project is to create a website for the UCL Urban Dynamics Lab. There are three main features and functions for the user: 
+<ul>
+  <li>The website allows for analysis of uploaded geo-data via Jupiter Terminal (CKAN)</li>
+<li>The website allows for discussion between users via the implementation of a forum </li>
+<li>The website forum is fairly developed, to a greater extent than the analysis feature (which requires just the integration of the Jupiter Terminal)</li>
+</ul>
+The website will thus allow users to sign up and log in, analyse uploaded data, use the forum feature to discuss this, as well as contribute to existing threads, create new threads, edit their profiles, and connect with other users. </font>
                 </div>
                 <div class="col-sm-4 text-center my-auto">
-                  <div class="h4 mb-0 text-primary">$34,693</div>
-                  <div class="small text-muted">YTD Revenue</div>
+                  <div class="h4 mb-0 text-primary"><h3>100</h3></div>
+                  <div class="small text-muted">expected logins per day</div>
                   <hr>
-                  <div class="h4 mb-0 text-warning">$18,474</div>
-                  <div class="small text-muted">YTD Expenses</div>
+                  <div class="h4 mb-0 text-warning"><h3>250</h3></div>
+                  <div class="small text-muted">expected python queries per day</div>
                   <hr>
-                  <div class="h4 mb-0 text-success">$16,219</div>
-                  <div class="small text-muted">YTD Margin</div>
+                  <div class="h4 mb-0 text-success"><h3>300</h3></div>
+                  <div class="small text-muted">expected forum actions per day </div>
                 </div>
               </div>
+              
             </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
           </div> 
         </div>
-          <!-- Card Columns Example Social Feed-->
-        <!-- </div>
-        <div class="col-lg-4"> -->
-          <!-- Example Pie Chart Card-->
-        <!--  <div class="card mb-3">
-            <div class="card-header">
-              <i class="fa fa-pie-chart"></i> Pie Chart Example</div>
-            <div class="card-body">
-              <canvas id="myPieChart" width="100%" height="100"></canvas>
-            </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-          </div>
-        </div>
-      </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © Your Website 2017</small>
-        </div>
-      </div>
-    </footer>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -127,7 +100,6 @@
     <script src="js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
-    <script src="js/sb-admin-charts.min.js"></script>
 
   </div>
 </body>

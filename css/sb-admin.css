@@ -4,11 +4,42 @@ html {
 
 body {
   overflow-x: hidden;
-   }
+}
 
 ol {
   z-index: 11;
 }
+
+.tracker{
+  position: relative;
+  height: auto;
+  width: 100%;
+  z-index: 11;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.tracker ol{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 11px; 
+  font-size: 18px;
+}
+
+.tracker ol li{
+  display: inline;
+  padding-right: 5px;
+}
+
+.item{
+  color:  #F5C42E;
+  font-style: none;
+}
+
+.active{
+  color: #277BE9;
+}
+
 .viewport{
   position: absolute;
   width: 100%;
