@@ -113,6 +113,16 @@ ol {
   opacity: 0.8;
 }
 
+.mySlides{
+  display: none;
+}
+
+.persona{
+  z-index:11;
+  width: 70%;
+  position: relative;
+}
+
 #customers {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
