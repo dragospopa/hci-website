@@ -22,7 +22,7 @@ ol {
 .tracker ol{
   list-style-type: none;
   overflow: hidden;
-  padding: 11px; 
+  padding: 11px;
   font-size: 18px;
 }
 
@@ -55,13 +55,13 @@ ol {
   position:absolute;
   top:30%;
   right:0;
-  height: 40%;
+  height: 13%;
   margin-bottom: 56px;
   width:7%;
   z-index: 100;
-  background-color: white;
-  border-radius: 5px;
-  opacity: 0;
+  background-color: black;
+  border-radius: 100%;
+  opacity: 0.1;
   text-align: center;
   float: center;
   -webkit-transition: 500ms;
