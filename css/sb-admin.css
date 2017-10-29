@@ -32,7 +32,7 @@ ol {
 }
 
 .item{
-  color:  #F5C42E;
+  color:  black;
   font-style: none;
 }
 
@@ -42,6 +42,7 @@ ol {
 
 .viewport{
   position: absolute;
+  background-color: #f1f1f1;
   width: 100%;
   height: 100%;
   margin-bottom: 56px;
@@ -112,6 +113,28 @@ ol {
   opacity: 0.8;
 }
 
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
 
 .content-wrapper {
   min-height: calc(100vh - 56px);
