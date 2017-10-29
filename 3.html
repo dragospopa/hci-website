@@ -17,7 +17,7 @@
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-   <div class="viewport"></div> 
+   <div class="viewport"></div>
     <!-- Arrows -->
     <a href="2.html"><div class="back"><img src="left.png"></div></a>
     <a href="4.html"><div class="next"><img src="right.png"></div></a>
@@ -83,7 +83,7 @@
       <li>Does not provide access to Jupiter Hub</li>
       <li>Does not provide access to CKAN</li>
     </ul>
-  </td>  
+  </td>
   </tr>
   </table>
 
@@ -95,8 +95,19 @@
               <div class="card-header"  style="background-color: #277BE9">
               <i class="fa fa-pie-chart"></i> Functional Requirements</div>
             <div class="card-body" style="background-color: #fefefe;">
-                        <p> Do you find most expert forums informal?</p>
-          
+              <ul>
+                <li class="list-item">The system will allow users to edit own profile with their expertise level and a short bio about themselves</li>
+                <li class="list-item">The system allows the generation of individual logs of usage history for each profile (analysis)</li>
+                <li class="list-item">System supports the creation, editing and deletion of forum threads</li>
+                <li class="list-item">Support searching for certain analyses that affect a certain geographical area</li>
+                <li class="list-item">Support searching through tags that are common between experts’ area of expertise, analysis and forum threads</li>
+                <li class="list-item">Support the option of choosing whether to make analysis results and data private or not</li>
+                <li class="list-item">The system will use the Jupiter Hub terminal so that user can write Python queries to manipulate existing data</li>
+                <li class="list-item">The system will analyse data from any format (images, spreadsheet, maps) through Jupiter Hub</li>
+                <li class="list-item">System allows users to generate a map that would show results of multiple analysis</li>
+                <li class="list-item">System allows referencing analysis results in forum threads through unique links</li>
+              </ul>
+
         </center>
           </div>
     </div>
@@ -107,7 +118,34 @@
             <div class="card-header"  style="background-color: #F5C42E">
               <i class="fa fa-pie-chart"></i> Non-functional Requirements</div>
             <div class="card-body" style="background-color: #fefefe;">
-               <p>Is the Jupiter Analysis Terminal easily accessible and allow you to analyse data the way you want to?</p>
+              <ul>
+                <li class="list-item"> Usability
+                <ul>
+                  <li>The platform will integrate the CKAN instance through a redirect</li>
+                  <li>The data will be uploaded through the CKAN instanceSetup Jupiter Hub in order to connect the experts with Hadoop</li>
+                  <li>Setup Jupiter Hub in order to connect the experts with Hadoop</li>
+                  <li>Ease of use for the main functionalities (analysis, evaluation of results, sharing results and usage of forum) - the user will experience an UI similar to the existing CKAN platform, as well as a basic UI for the forum</li>
+                </ul>
+              </li>
+              <li class="list-item"> Reliability
+                <ul>
+                  <li>A user can rely on the platform to access their analysis results, logs and forums during uptime</li>
+                </ul>
+              </li>
+              <li class="list-item"> Security
+                <ul>
+                  <li>Safe storage  - users can keep their uploaded files safe from other malicious users</li>
+                  <li>System will implement powerful server-side validation through LDAP (authentication and authorisation)</li>
+                </ul>
+              </li>
+                <li class="list-item"> Performance
+                  <ul>
+                    <li>Data that the user inputs will be responded with the correct output from the external analysis services with the expected format (maps, charts or any other format)</li>
+                    <li>Searching has to be done fast and accurate, with no need for a page refresh (instant)</li>
+                    <li>Searching has to be done fast and accurate, with no need for a page refresh (instant)</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -118,7 +156,7 @@
     </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
-  
+
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
