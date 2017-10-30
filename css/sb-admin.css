@@ -64,7 +64,7 @@ ol {
   margin-bottom: 56px;
   width:100px;
   z-index: 100;
-  background-color:	#C0C0C0;
+  background-color: #C0C0C0;
   border-radius: 100%;
   opacity: 0.1;
   text-align: center;
@@ -81,6 +81,38 @@ ol {
 }
 
 .next:hover{
+  -webkit-transition: 500ms;
+  transition:  500ms;
+  visibility: visible;
+  opacity: 0.8;
+}
+
+
+.next1{
+  position:absolute;
+  top:40%;
+  right:0;
+  height: 100px;
+  margin-bottom: 56px;
+  width:100px;
+  z-index: 100;
+  background-color: #C0C0C0;
+  border-radius: 100%;
+  opacity: 0.4;
+  text-align: center;
+  float: center;
+  -webkit-transition: 500ms;
+  transition:  500ms;
+}
+
+.next1 img{
+  position: absolute;
+  top:33%;
+  height:40%;
+  right: 25%;
+}
+
+.next1:hover{
   -webkit-transition: 500ms;
   transition:  500ms;
   visibility: visible;
