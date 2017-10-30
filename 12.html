@@ -20,8 +20,8 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
    <div class="viewport"></div>
     <!-- Arrows -->
-    <a href="7.html"><div class="back"><img src="left.png"></div></a>
-    <a href="9.html"><div class="next"><img src="right.png"></div></a>
+    <a href="11.html"><div class="back"><img src="left.png"></div></a>
+    <a href="13.html"><div class="next"><img src="right.png"></div></a>
     <div class="content-wrapper">
     <div class="container-fluid" style="z-index: 1000;">
       <!-- Breadcrumbs-->
@@ -34,59 +34,55 @@
           <li> <a href="5.html" class="item"> Scenarios</a> /</li>
           <li> <a href="6.html" class="item"> Sketches</a> /</li>
           <li> <a href="7.html" class="item"> Prototyping</a> /</li>
-          <li> <a href="" class="active"> Evaluation</a> /</li>
-          <li> <a href="10.html" class="item"> Iterations</a> /</li>
+          <li> <a href="8.html" class="item"> Evaluation</a> /</li>
+          <li> <a href="10.html" class="active"> Iterations</a> /</li>
           <li> <a href="13.html" class="item"> References</a></li>
         </ol>
       </div>
       <!-- Area Chart Example-->
-        <div class="card mb-3" style="opacity:0.9;">
-        <div class="card-header" style="background-color: #277BE9">
-          <i class="fa fa-area-chart"></i><font size="3px"> Prototype Evaluation</font></div>
-        <div class="card-body" style="background-color: #fefefe; font-size:20px;">
-          <p>In order to evaluate our prototypes, we have decided to embrace both a Heuristic Evaluation, as well as a user-testing based evaluation. Both of these helped us achieve our final prototype as it passed both the user's expectations and our design issues.</p>
-          <p>The following table is presenting the Heuristic Evaluation that we have focused on when we designed the sketches, as well as the survey results that we have gathered from potential users.</p>
+      
 
-
-        </div>
-      </div>
-<br>
-
-        <div class="card mb-3" style="opacity:0.9;">
-        <div class="card-header" style="background-color: #F5C42E">
-          <i class="fa fa-area-chart"></i><font size="3px"> Heuristic Evaluation</font></div>
-        <div class="card-body" style="background-color: #fefefe;">
-<table id="customers2">
+<br><br>
+<div class="card mb-3" style="opacity:0.9;">
+   <div class="card-header" style="background-color: #277BE9">
+      <i class="fa fa-area-chart"></i><font size="3px"> Indvidual Page Feedback</font></div>
+      <div class="card-body" style="background-color: #fefefe;">
+        <table id="customers2">
   <tr>
-    <th>Heuristic</th>
-    <th>Problem</th>
-    <th>Solution</th>
+    <th>Name</th>
+    <th>First Iteration</th>
+    <th>Second Iteration</th>
+    <th>Final Iteration</th>
   </tr>
   <tr>
-    <td>Navigation</td>
-    <td>The Login button and Sign up tab are visible after loging in</td>
-    <td>
-      The Login button should be replaced with a Logout one, while the Sign Up tab will switch to Profile tab. 
-    </td>
+    <td>Homepage</td>
+    <td>The homepage does seem a bit scarcely populated. Add in more content.</td>
+    <td>Added in the “About Us” area, and spread out the content more
+evenly on the page, as well as adding the Latest Forum Updates area back onto this page only.</td>
+    <td>Added in the “About Us” area, and spread out the content more
+evenly on the page, as well as adding the Latest Forum Updates area back onto this page only.</td>
   </tr>
   <tr>
-    <td>Aesthetics Design</td>
-    <td>The Logo on all pages is too informal for an expert platform like UDL</td>
-    <td>
-      Change the Logo to fit into a more UCL-like styling of the page
-    </td>
+    <td>Signup Page</td>
+    <td>Add in more details for the user to fill in e.g. confirm password, first AND last names, etc.</td>
+    <td><ul><li>Add a “Log In” button for those who’ve already signed up and come here by mistake.</li>
+<li>Add a username rather than just signing in by email.</li></ul></td>
+    <td>Added in more details, and a log in button. We spaced it out nicely across the
+page for a user-friendly look.</td>
   </tr>
   <tr>
-    <td>User Control and Freedom</td>
-    <td>All forums appear on one page</td>
-    <td>The next page button is needed</td>
+    <td>Login Page</td>
+    <td>Add in the option to login via username OR email, not just email</td>
+    <td>Add in the option to reset your password (“Forgot Password” link)</td>
+    <td>Added in both the required options, and made sure the fields and form more
+generally were user-friendly.</td>
   </tr>
   </table>
 
         </div>
       </div>
-        </div>
-      </div>
+    </div>
+  </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
 
@@ -94,6 +90,29 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
