@@ -22,7 +22,7 @@ ol {
 .tracker ol{
   list-style-type: none;
   overflow: hidden;
-  padding: 11px; 
+  padding: 11px;
   font-size: 18px;
 }
 
@@ -53,15 +53,15 @@ ol {
 
 .next{
   position:absolute;
-  top:30%;
+  top:40%;
   right:0;
-  height: 40%;
+  height: 100px;
   margin-bottom: 56px;
-  width:7%;
+  width:100px;
   z-index: 100;
-  background-color: white;
-  border-radius: 5px;
-  opacity: 0;
+  background-color:	#C0C0C0;
+  border-radius: 100%;
+  opacity: 0.1;
   text-align: center;
   float: center;
   -webkit-transition: 500ms;
@@ -70,9 +70,9 @@ ol {
 
 .next img{
   position: absolute;
-  top:45%;
-  height:17%;
-  right: 15%;
+  top:33%;
+  height:40%;
+  right: 25%;
 }
 
 .next:hover{
@@ -84,15 +84,15 @@ ol {
 
 .back{
   position:absolute;
-  top:30%;
+  top:40%;
   left:0;
-  height: 40%;
+  height: 100px;
   margin-bottom: 56px;
-  width:7%;
+  width:100px;
   z-index: 100;
-  background-color: white;
-  border-radius: 5px;
-  opacity: 0;
+  background-color: #C0C0C0;
+  border-radius: 100%;
+  opacity: 0.1;
   text-align: center;
   float: center;
   -webkit-transition: 500ms;
@@ -101,9 +101,9 @@ ol {
 
 .back img{
   position: absolute;
-  top:45%;
-  height:15%;
-  left: 15%;
+  top:33%;
+  height:40%;
+  right: 35%;
 }
 
 .back:hover{
