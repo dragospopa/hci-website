@@ -14,15 +14,14 @@
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-   <div class="viewport"></div> 
+   <div class="viewport"></div>
     <!-- Arrows -->
-    <a href="6.html"><div class="back"><img src="left.png"></div></a>
-    <a href="8.html"><div class="next"><img src="right.png"></div></a>
+    <a href="12.html"><div class="back"><img src="left.png"></div></a>
+    <a href="13.html"><div class="next"><img src="right.png"></div></a>
     <div class="content-wrapper">
     <div class="container-fluid" style="z-index: 1000;">
       <!-- Breadcrumbs-->
@@ -34,48 +33,59 @@
           <li> <a href="4.html" class="item"> Personas</a> /</li>
           <li> <a href="5.html" class="item"> Scenarios</a> /</li>
           <li> <a href="6.html" class="item"> Sketches</a> /</li>
-          <li> <a href="" class="active"> Prototyping</a> /</li>
+          <li> <a href="7.html" class="item"> Prototyping</a> /</li>
           <li> <a href="8.html" class="item"> Evaluation</a> /</li>
           <li> <a href="10.html" class="item"> Iterations</a> /</li>
-          <li> <a href="14.html" class="item"> Architecture</a> /</li>
+          <li> <a href="" class="active"> Architecture</a> /</li>
           <li> <a href="13.html" class="item"> References</a></li>
         </ol>
       </div>
       <!-- Area Chart Example-->
-
-
-    <div class="card mb-3" style="opacity:0.9;">
+        <div class="card mb-3" style="opacity:0.9;">
         <div class="card-header" style="background-color: #277BE9">
-          <i class="fa fa-area-chart"></i><font size="3px"> Why use sketching as a prototype?</font></div>
+          <i class="fa fa-area-chart"></i><font size="3px"> Architecture Overview</font></div>
         <div class="card-body" style="background-color: #fefefe;">
-        <p>We felt that this brings the design to life - it clarifies ambiguous requirements. This particular prototype, made through sketching, supports user involvement and feedback, as users are observers in the demonstration. We believe this prototype allows us to identify problems early, so that we can use them to explore usability issues such as placing the right button in the right pages so the user can easily navigate to and away from the home page.</p>
+        <p>
+          Based on the research that the team has done, the complex solution represented by the sketch prototype required the team to consider how the architecture will look. Based on this, the team has decided that the web-based platform that the team is required to design will be supported by Drupal for front-end and all the server communication. The client has mentioned that it would be best to make use of a PostgreSQL database as it would become easier to maintain after the handover at the end of the project. All these requirements, as well as the need for a powerful validation server lead us to the following architecture diagram.</p>
         </div>
       </div>
+  <div class="w3-content w3-display-container" style="width: 55%;">
+  <img class="mySlides" src="architecture.jpg" style="width:100%">
 
-
-
-  <div class="card mb-3" style="opacity:0.9">
-              <div class="card-header"  style="background-color: #23AC66">
-              <i class="fa fa-pie-chart"></i> Prototype Video</div>
-            <div class="card-body" style="background-color: #fefefe;">
-              <center>
-              <iframe width="800" height="465" src="https://www.youtube.com/embed/vk0cLJwYO0g?rel=0" frameborder="0" allowfullscreen></iframe>
-              </center>
-       </div>
-    </div>
-
-
+</div>
         </div>
       </div>
   </div>
     </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
+
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
 
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
